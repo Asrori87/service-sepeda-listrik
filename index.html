@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Service Sepeda Listrik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="body">
+    <div class="home">
+      <form id="serviceForm">
+        <div class="form-header">
+          <h2>Form Permintaan Service</h2>
+          <p>
+            Isi formulir di bawah ini agar tim kami dapat segera membantu
+            menyelesaikan kendala sepeda listrik Anda.
+          </p>
+        </div>
+        <div class="form-input">
+          <!-- <label>Nama</label> -->
+          <input
+            type="text"
+            name="nama"
+            placeholder="Masukkan nama anda"
+            required
+          />
+          <div class="icon">
+            <i class="bi bi-person-fill" style="font-size: 16px"></i>
+          </div>
+        </div>
+
+        <div class="form-input">
+          <!-- <label>Alamat</label> -->
+          <input
+            type="text"
+            name="alamat"
+            placeholder="Masukkan detail alamat"
+            required
+          />
+          <div class="icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+        </div>
+        <div class="form-input">
+          <!-- <label>No HP</label> -->
+          <input
+            type="text"
+            name="no_hp"
+            placeholder="No Hp: 6282123456789"
+            required
+          />
+          <div class="icon">
+            <i class="bi bi-telephone-fill" style="font-size: 13px"></i>
+          </div>
+        </div>
+
+        <div class="container-select">
+          <div class="form-input">
+            <!-- <label>Merek</label> -->
+            <select name="merk" id="merk" class="select" required>
+              <option value="">Pilih Merek</option>
+              <option value="United">United</option>
+              <option value="Selis">Selis</option>
+            </select>
+          </div>
+
+          <div class="form-input">
+            <!-- <label>Tipe</label> -->
+            <select name="tipe" id="tipe" class="select" required>
+              <option value="">Pilih Tipe</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-input">
+          <!-- <label>Jenis Service</label> -->
+          <textarea
+            type="text"
+            name="jenis_service"
+            placeholder="Aku membutuhkan bantuan..."
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

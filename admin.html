@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Service</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="admin">
+      <div class="flex-between">
+        <h2>Data Service Sepeda Listrik</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari nama, ID, atau status..."
+          onkeyup="searchTable()"
+        />
+      </div>
+      <div class="table-layout">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Alamat</th>
+              <th>No HP</th>
+              <th>Merek</th>
+              <th>Tipe</th>
+              <th>Tanggal</th>
+              <th>Jenis Service</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
