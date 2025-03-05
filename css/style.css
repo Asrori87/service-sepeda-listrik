@@ -138,7 +138,6 @@ form .form-input {
   color: gray;
   font-size: 14px;
   border-radius: 8px;
-  /* background-color: #00000009; */
   border: 1px solid var(--border);
 }
 
@@ -149,7 +148,7 @@ textarea,
   width: 100%;
   padding: 10px 8px;
   border: none;
-  font-size: 13px;
+  font-size: 15px;
   color: #333;
   background-color: transparent;
   outline: none;
@@ -176,7 +175,7 @@ form button {
   background-color: oklch(0.645 0.246 16.439);
   border: none;
   padding: 12px 10px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border-radius: 99px;
   color: white;
@@ -196,7 +195,8 @@ form button:hover {
     padding: 2rem 1.5rem;
     /* margin: 1rem; */
   }
-  /* form .container-select .select {
-    width: 140px;
-  } */
+  .form-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
